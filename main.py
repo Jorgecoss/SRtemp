@@ -5,7 +5,7 @@ import wifi
 import requests
 from datetime import datetime, timedelta
 
-DS18B20 = '28-xxxxxxxxxxxx'  # Reemplazar con el ID del sensor
+DS18B20 = '28-3c51f6497131'  # Reemplazar con el ID del sensor
 data_list = []
 
 while True:
@@ -25,7 +25,7 @@ while True:
         json.dump(data, outfile)
 
     # Esperar 5 minutos antes de volver a leer la temperatura
-    time.sleep(300)
+    time.sleep(10)
 
     # Conectarse a wifi
     wifi.connect()
